@@ -1,0 +1,59 @@
+[
+    {
+        "id": "acbb6a2d.24b3e8",
+        "type": "tab",
+        "label": "フロー 1",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "7df527fc.779cc8",
+        "type": "inject",
+        "z": "acbb6a2d.24b3e8",
+        "name": "",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "x": 120,
+        "y": 80,
+        "wires": [
+            [
+                "f4a1c491.929a38"
+            ]
+        ]
+    },
+    {
+        "id": "f4a1c491.929a38",
+        "type": "function",
+        "z": "acbb6a2d.24b3e8",
+        "name": "",
+        "func": "// Payloadから日付オブジェクトを生成\nvar date = new Date(msg.payload);\n// 日付文字列に変換して再度Payloadをセット\nmsg.payload = date.toString();\n// 次のNodeへmsgオブジェクトを返す\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 330,
+        "y": 80,
+        "wires": [
+            [
+                "57aa9ff.ea0716"
+            ]
+        ]
+    },
+    {
+        "id": "57aa9ff.ea0716",
+        "type": "debug",
+        "z": "acbb6a2d.24b3e8",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": true,
+        "tostatus": false,
+        "complete": "payload",
+        "x": 530,
+        "y": 100,
+        "wires": []
+    }
+]
