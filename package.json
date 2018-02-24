@@ -1,0 +1,27 @@
+{
+  "name": "isaax-node-red-sample",
+  "version": "0.1.0",
+  "description": "You need only Raspberry Pi.",
+  "main": "index.js",
+  "dependencies": {
+    "node-red": "^0.18.3",
+    "npm": "^5.6.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tomotomo/isaax-node-red-sample.git"
+  },
+  "keywords": [
+    "node-red"
+  ],
+  "author": "Tomoyuki Sugita",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tomotomo/isaax-node-red-sample/issues"
+  },
+  "homepage": "https://github.com/tomotomo/isaax-node-red-sample#readme"
+}
